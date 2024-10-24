@@ -7,7 +7,13 @@ function App() {
   let [count, setCount] = useState(0)
 
   let addcount = ()=>{
-    setCount(count + 1)
+    
+    // setCount(count + 1)
+
+    setCount(count => count + 1)
+    setCount(count => count + 1)
+    setCount(count => count + 1)
+    setCount(count => count + 1)
   }
 
   let removeCount = ()=>{
