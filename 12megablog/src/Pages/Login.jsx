@@ -4,7 +4,6 @@ function Login() {
   return (
     <div className='py-8'>
       <LoginComponent />
-      <h1>sumit</h1>
     </div>
   )
 }

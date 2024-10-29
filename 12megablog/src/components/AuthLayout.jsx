@@ -12,6 +12,7 @@ function Protected({children, authentication = true }) {
         } else if ( !authentication && authStatus !== authentication ) {
             navigate("/")
         }
+        setLoader(false)
     },[authStatus, navigate, authentication])
   return loader ? (<h1 className='text-center'> Loading...</h1>) : <>{children}</>
 }

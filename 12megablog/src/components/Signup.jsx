@@ -24,7 +24,7 @@ export default function SignupComponent() {
                 navigate("/")
             }
         } catch (error) {
-            setError(error)
+            setError(error.message)
         }
     }
     
